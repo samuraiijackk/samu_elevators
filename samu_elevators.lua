@@ -45,10 +45,12 @@ function openActionMenu()
                     SetEntityCoords(ped, 344.72, -586.43, 28.08, false, false, false, true) --GARAGE
                     ClearPedTasksImmediately(ped)
                     DoScreenFadeIn(3000)
+                            ESX.UI.Menu.CloseAll()
                 else
                     biniliyor = false
                     ClearPedTasksImmediately(ped)
                     DoScreenFadeIn(3000)
+                            ESX.UI.Menu.CloseAll()
                 end
             end)
         elseif data.current.value == 'down' then
@@ -72,10 +74,12 @@ function openActionMenu()
                     SetEntityCoords(ped, 330.15, -601.01, 43.29, false, false, false, true) --LOBBY
                     ClearPedTasksImmediately(ped)
                     DoScreenFadeIn(3000)
+                            ESX.UI.Menu.CloseAll()
                 else
                     biniliyor2 = false
                     ClearPedTasksImmediately(ped)
                     DoScreenFadeIn(3000)
+                            ESX.UI.Menu.CloseAll()
                 end
             end)
         elseif data.current.value == 'braha' then
@@ -99,10 +103,12 @@ function openActionMenu()
                     SetEntityCoords(ped, 338.68, -583.69, 74.17, false, false, false, true) --HELICOPTERS
                     ClearPedTasksImmediately(ped)
                     DoScreenFadeIn(3000)
+                            ESX.UI.Menu.CloseAll()
                 else
                     biniliyor3 = false
                     ClearPedTasksImmediately(ped)
                     DoScreenFadeIn(3000)
+                            ESX.UI.Menu.CloseAll()
                 end
             end)
         end
@@ -131,7 +137,7 @@ Citizen.CreateThread(function()
             end
         end
         if not inRange then
-            ESX.UI.Menu.CloseAll()
+            --ESX.UI.Menu.CloseAll()
             Citizen.Wait(2000)
         end
     end 
